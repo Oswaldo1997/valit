@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+footer{
+	width:100%;
+	margin-top:20px;
+	margin-bottom:20px;
+	position:relative;
+}
+footer .contenedor{
+	height:auto;
+	display:table;
+}
+footer .contenedor .titulo{
+	width:100%;
+	text-align:center;
+	border-bottom:1px solid #F00;
+	margin-bottom:10px;
+}
+footer .contenedor .redes{
+	width:20%;
+	float:right;
+}
+footer .contenedor .redes p{
+	text-align:center;
+	font-size:15px;
+	display:table;
+	
+}
+footer .contenedor .redes a{
+	text-decoration:none;
+	font-size:25;
+}
+@media (min-width:1024px){
+	footer .contenedor .redes a{
+
+	font-size:40px;
+	
+}
+}

@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+header{
+	width:100%;
+	color:#000;
+	background:#F00;
+	height:50px;
+	position:fixed;
+	z-index:100;
+	top:0px;
+	left;0px;
+}
+header .contenedor{
+	display:table;
+}
+header .contenedor h2{
+	float:left;
+	margin:10px 0px;
+	font-size:25px;
+}
+#menu-bar{
+	display:none;
+}
+header .contenedor label{
+	float:right;
+	margin:10px 0px;
+	cursor:pointer;
+	font-size:30px;
+}
+header .contenedor .menu{
+	position:absolute;
+	top:50px;
+	left:0px;
+	width:100%;
+	background:rgba(59, 56, 56, 0.9);
+	height:100vh;
+	transform:translateX(-100%);
+	transition:all 0.5s;
+	}
+header .contenedor .menu a{
+	display:block;
+	text-decoration:none;
+	color:#FFF;
+	font-size:23;
+	font-weight:normal;
+	font-style:normal;
+	height:50px;
+	padding:10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.9);	
+}
+header .contenedor .menu a:hover{
+	background:rgba(40, 40, 40, 0.9);	
+}
+#menu-bar:checked ~ .menu{
+	transform:translateX(0%)
+}
+@media (min-width:1024px){
+	header .contenedor .menu{
+	position:static;
+	width:auto;
+	height:auto;
+	transform:translateX(0%);
+	float:right;
+	display:flex;
+	background:#F00;
+}
+header .contenedor label{
+	display:none;
+}
+header .contenedor .menu a{
+	border-bottom:none;	
+}
+	
+}
+	

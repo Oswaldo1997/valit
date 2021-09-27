@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+main #banner{
+	margin-top:50px;
+	position:relative;
+}
+main #banner img{
+	width:100%;
+	height:100%;	
+}
+main #banner .contenedor{
+	position:absolute;
+	top:50%;
+	left:50%;
+	color:#FFF;
+	transform:translateX(-50%) translateY(-50%);
+}
+main #banner .contenedor h3{
+	font-size:25px;
+	font-style:normal;
+	background:rgba(0,0,0,0.5);
+	border-radius:5px 5px 0px 0px;
+	padding-left:10px;
+}
+main #banner .contenedor p{
+	font-size:20px;
+	font-style:normal;
+	background:rgba(0,0,0,0.5);
+	border-radius:0px 0px 5px 5px;
+	padding-left:10px;
+}
+main #principal .contenedor{
+	height:auto;
+	position:relative;
+	margin-top:10px;
+	display:table;
+}
+main #principal .contenedor article{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+main #principal .contenedor article .nota{
+	width:95%;
+	margin:auto;
+	margin-top:10px;
+	display:table;
+}
+main #principal .contenedor article .nota p{
+	width:100%;
+	height:auto;
+	font-size:18px;
+	font-weight:bold;
+	text-align:left;
+}
+main #principal .contenedor article .nota p img{
+	width:100%;	
+}
+main #principal .contenedor article .nota p a{
+	text-decoration:none;
+	font-style:italic;
+	color:#333;
+	font-weight:normal;
+}
+main #principal .contenedor article .nota p a:hover{
+	text-decoration:underline;
+}
+
+main #principal .contenedor aside{
+	width:100%;
+	border:1px solid #333;
+	margin:auto;
+}
+
+main #principal .contenedor aside .formulario{
+	width:100%;
+	text-align:center; 
+	border-bottom:1px solid #333;
+	padding:15px 5px;	
+}
+main #principal .contenedor aside .formulario input{
+	margin:auto;
+	font-size:20px;
+	width:98%;
+    margin: 10px 0px;
+}
+main #principal .contenedor aside .formulario input[type="text"]{
+	background:url(../imagenes/usuario.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	background-size:contain;
+}
+main #principal .contenedor aside .formulario input[type="password"]{
+	background:url(../imagenes/password.jpeg);
+	background-repeat:no-repeat;
+	background-position:right;
+	background-size:contain;
+}
+main #principal .contenedor aside .formulario button{
+	margin:auto;
+	font-size:25px;
+	width:98%;
+    margin: 10px 0px;
+	cursor:pointer;
+}
+main #principal .contenedor aside .formulario button:hover{
+	background:rgba(40,40,40,0.9);
+}
+main #principal .contenedor aside .formulario  a{
+	font-size:18px;
+	text-decoration:none;
+	color:#000;
+	padding: 0px 10px;
+}
+main #principal .contenedor aside .formulario a:hover{
+	background:rgba(40,40,40,0.9);
+}
+main #Otros{
+	background:rgb(50,50,50);
+	color:#fff;
+	text-align:center;
+	padding:20px;
+	position:relative;
+}
+main #Otros .contenedor{
+	height:auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+main #Otros .contenedor h1{
+	font-style:italic;
+	width:100%;
+}
+main #Otros .contenedor .Otros{
+	margin:20px;	
+}
+main #Otros .contenedor .Otros a img{
+	width:180px;
+	height:180px;
+	border-radius:100%;
+	border:5px solid #fff;
+}
+main #Otros .contenedor .Otros h3{
+	width:180px;
+}
+@media (min-width:1024px){
+	main #banner{
+		height:300px;
+		overflow:hidden;
+	}
+	main #banner img{
+		height:auto;
+		margin-top:-100px; 	
+}
+    main #principal .contenedor article{
+	   width:70%;
+	   float:left;
+}
+   main #principal .contenedor aside{
+	   width:30%;
+	   float:right;
+}
+main #principal .contenedor article .nota{
+	width:40%;
+	margin:20px;
+}  
+}
+@media (min-width:768px) and (max-width:1023px){
+	main #banner{
+		height:250px;
+		overflow:hidden;
+
+	}
+	main #banner img{
+		height:auto;
+		margin-top:-50px;
+		
+}
+    main #principal .contenedor article{
+	   width:70%;
+	   float:left;
+	   	
+}
+   main #principal .contenedor aside{
+	   width:30%;
+	   float:right;
+}
+   main #principal .contenedor article .nota{
+	   width:40%;
+	   margin:15px;
+}  
+	
+}
+@media (min-width:480px) and (max-width:767px){
+	main #banner{
+		height:200px;
+		overflow:hidden;
+
+	}
+	main #banner img{
+		height:auto;
+		margin-top:-10px;
+		
+}
+  main #banner .contenedor h3{
+	  font-size:20px;
+	
+  }
+  main #banner .contenedor p{
+	  font-size:17px;
+  }
+
+    main #principal .contenedor article{
+	   width:70%;
+	   float:left;
+	   	
+}
+   main #principal .contenedor aside{
+	   width:30%;
+	   float:right;
+}
+   main #principal .contenedor article .nota{
+	   width:45%;
+	   margin:2px;
+}  
+  main #principal .contenedor article .nota p{
+	  font-size:15px;
+}
+  main #principal .contenedor aside .formulario button{
+	  font-size:15px;
+ }
+   main #principal .contenedor aside .formulario input{
+	  font-size:15px;
+
+}
